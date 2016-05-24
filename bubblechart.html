@@ -1,0 +1,194 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BubbleChartID132c66fa154</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- BubbleChart generated in R 3.2.3 by googleVis 0.5.10 package -->
+<!-- Tue May 24 16:44:13 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataBubbleChartID132c66fa154 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Apples",
+98,
+78,
+"2008",
+20 
+],
+[
+ "Apples",
+111,
+79,
+"2009",
+32 
+],
+[
+ "Apples",
+89,
+76,
+"2010",
+13 
+],
+[
+ "Oranges",
+96,
+81,
+"2008",
+15 
+],
+[
+ "Bananas",
+85,
+76,
+"2008",
+9 
+],
+[
+ "Oranges",
+93,
+80,
+"2009",
+13 
+],
+[
+ "Bananas",
+94,
+78,
+"2009",
+16 
+],
+[
+ "Oranges",
+98,
+91,
+"2010",
+7 
+],
+[
+ "Bananas",
+81,
+71,
+"2010",
+10 
+] 
+];
+data.addColumn('string','Fruit');
+data.addColumn('number','Sales');
+data.addColumn('number','Expenses');
+data.addColumn('string','Year');
+data.addColumn('number','Profit');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartBubbleChartID132c66fa154() {
+var data = gvisDataBubbleChartID132c66fa154();
+var options = {};
+options["hAxis"] = {minValue:75, maxValue:125};
+options["vAxis"] = {minValue:55, maxValue:105};
+options["width"] =    600;
+options["height"] =    900;
+
+
+    chartBubbleChartID132c66fa154 = new google.visualization.ChartWrapper({
+    dataTable: data,       
+    chartType: 'BubbleChart',
+    containerId: 'BubbleChartID132c66fa154',
+    options: options
+    });
+    chartBubbleChartID132c66fa154.draw();
+    
+
+}
+
+  function openEditorBubbleChartID132c66fa154() {
+  var editor = new google.visualization.ChartEditor();
+  google.visualization.events.addListener(editor, 'ok',
+  function() { 
+  chartBubbleChartID132c66fa154 = editor.getChartWrapper();  
+  chartBubbleChartID132c66fa154.draw(document.getElementById('BubbleChartID132c66fa154')); 
+  }); 
+  editor.openDialog(chartBubbleChartID132c66fa154);
+  }
+    
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "charteditor";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBubbleChartID132c66fa154);
+})();
+function displayChartBubbleChartID132c66fa154() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID132c66fa154"></script>
+ 
+<!-- divChart -->
+<input type='button' onclick='openEditorBubbleChartID132c66fa154()' value='other table'/>  
+<div id="BubbleChartID132c66fa154" 
+  style="width: 600; height: 900;">
+</div>
+ <div><span>Data: Fruits &#8226; Chart ID: <a href="Chart_BubbleChartID132c66fa154.html">BubbleChartID132c66fa154</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.3 (2015-12-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
