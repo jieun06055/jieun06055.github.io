@@ -1,8 +1,9 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BubbleChartID12442c034001</title>
+<title>BubbleChartID1fcc41a5692f</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +19,14 @@ body {
 </head>
 <body>
  <!-- BubbleChart generated in R 3.2.5 by googleVis 0.5.10 package -->
-<!-- Tue Jun 07 10:29:18 2016 -->
+<!-- Sun Jun 12 13:21:09 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID12442c034001 () {
+function gvisDataBubbleChartID1fcc41a5692f () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1188,17 +1189,18 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID12442c034001() {
-var data = gvisDataBubbleChartID12442c034001();
+function drawChartBubbleChartID1fcc41a5692f() {
+var data = gvisDataBubbleChartID1fcc41a5692f();
 var options = {};
+options["title"] = "Country Income & lifeExp";
 options["hAxis"] = {title:'life expectation', minValue:43, maxValue:85};
-options["vAxis"] = {title:'Income', minValue:-100, maxValue:90000};
+options["vAxis"] = {title:'Income', minValue:0, maxValue:90000};
 options["width"] =   1100;
 options["height"] =    600;
 
 
     var chart = new google.visualization.BubbleChart(
-    document.getElementById('BubbleChartID12442c034001')
+    document.getElementById('BubbleChartID1fcc41a5692f')
     );
     chart.draw(data,options);
     
@@ -1222,9 +1224,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID12442c034001);
+callbacks.push(drawChartBubbleChartID1fcc41a5692f);
 })();
-function displayChartBubbleChartID12442c034001() {
+function displayChartBubbleChartID1fcc41a5692f() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1248,23 +1250,23 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID12442c034001"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID1fcc41a5692f"></script>
  
 <!-- divChart -->
   
-<div id="BubbleChartID12442c034001" 
+<div id="BubbleChartID1fcc41a5692f" 
   style="width: 1100; height: 600;">
 </div>
- <div><span>Data: wdi &#8226; Chart ID: <a href="Chart_BubbleChartID12442c034001.html">BubbleChartID12442c034001</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: wdi &#8226; Chart ID: <a href="Chart_BubbleChartID1fcc41a5692f.html">BubbleChartID1fcc41a5692f</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.5 (2016-04-14) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart">Documentation and Data Policy</a>
 </span></div>
 <p></p>
-<div>
-<p> 소득이 높을수록 기대수명이 높았고</p>
-<p> 지역으로는 유럽쪽이 소득이 높고, 동아시아쪽이 기대수명이 높았으며, 아프리카쪽이 소득이 낮고 기대수명이 낮았다.</p>
+<div> 대체로 소득(Income)이 높을수록 기대수명(lifeExp)이 높았고
+<p> 지역으로는 유럽쪽이 소득이 높았고, 동아시아쪽이 기대수명이 높았으며 </p>
+<p> 아프리카쪽이 소득도 낮고 기대수명도 낮았다. </p>
 </div>
 </body>
 </html>
