@@ -1,8 +1,9 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartID12444db94c3b</title>
+<title>ScatterChartID1fcc76af5705</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +19,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.5 by googleVis 0.5.10 package -->
-<!-- Tue Jun 07 09:50:10 2016 -->
+<!-- Sun Jun 12 13:12:17 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID12444db94c3b () {
+function gvisDataScatterChartID1fcc76af5705 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -693,8 +694,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID12444db94c3b() {
-var data = gvisDataScatterChartID12444db94c3b();
+function drawChartScatterChartID1fcc76af5705() {
+var data = gvisDataScatterChartID1fcc76af5705();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =    650;
@@ -703,11 +704,12 @@ options["title"] = "lifeExp&Income";
 options["hAxis"] = {title:'lifeExp'};
 options["vAxis"] = {title : 'Income'};
 options["trendlines"] = "linear";
-options["col"] = "yellow";
+options["crosshair"] = { trigger: 'both' };
+options["pointShape"] = {type: 'star', sides: '4', dent: '0.5'};
 
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartID12444db94c3b')
+    document.getElementById('ScatterChartID1fcc76af5705')
     );
     chart.draw(data,options);
     
@@ -731,9 +733,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID12444db94c3b);
+callbacks.push(drawChartScatterChartID1fcc76af5705);
 })();
-function displayChartScatterChartID12444db94c3b() {
+function displayChartScatterChartID1fcc76af5705() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -757,22 +759,24 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID12444db94c3b"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID1fcc76af5705"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartID12444db94c3b" 
+<div id="ScatterChartID1fcc76af5705" 
   style="width: 650; height: 600;">
 </div>
- <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartID12444db94c3b.html">ScatterChartID12444db94c3b</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartID1fcc76af5705.html">ScatterChartID1fcc76af5705</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.5 (2016-04-14) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
-
 <p></p>
-<div> 기대수명과 소득과의 상관관계를 살펴보니 
-<p> 기대수명이 늘어날수록 소득도 높게 나타나는 경향을 확인할 수 있었다.</p>
-</div></body>
+<div> 기대수명(lifeExp)과 소득(Income)과의 상관관계를 보아
+<p> 기대수명이 늘어날수록 소득도 높게 나타나는 것을 볼 수 있다.</p>
+<p> 소득이 높은 사람이 소득이 낮은 사람보다 치료 등 더 많은 혜택누릴 수 있을 것이다.</p>
+<p> 그래서 소득이 높아질 수록 기대수명도 늘어난다고 볼 수 있다.</p>
+</div>
+</body>
 </html>
