@@ -1,8 +1,9 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>PieChartID15c05e6845e5</title>
+<title>MergedID1fcc2a0c384a</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +19,14 @@ body {
 </head>
 <body>
  <!-- PieChart generated in R 3.2.5 by googleVis 0.5.10 package -->
-<!-- Tue May 31 02:42:31 2016 -->
+<!-- Sun Jun 12 13:36:57 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID15c05e6845e5 () {
+function gvisDataPieChartID1fcc78eb7934 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -55,22 +56,79 @@ data.addColumn('number','Population');
 data.addRows(datajson);
 return(data);
 }
+
+
+// jsData 
+function gvisDataPieChartID1fcc498731cb () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Afghanistan",
+70.66136 
+],
+[
+ "Angola",
+61.8733 
+],
+[
+ "Albania",
+116.15721 
+],
+[
+ "United Arab Emirates",
+171.8738 
+],
+[
+ "Argentina",
+162.52742 
+] 
+];
+data.addColumn('string','Country.Name');
+data.addColumn('number','Mobile');
+data.addRows(datajson);
+return(data);
+}
  
 // jsDrawChart
-function drawChartPieChartID15c05e6845e5() {
-var data = gvisDataPieChartID15c05e6845e5();
+function drawChartPieChartID1fcc78eb7934() {
+var data = gvisDataPieChartID1fcc78eb7934();
 var options = {};
 options["allowHtml"] = true;
 options["title"] = "Population";
 options["legend"] = "none";
 options["pieSliceText"] = "label";
-options["width"] =    800;
-options["height"] =    700;
+options["width"] =    600;
+options["height"] =    600;
 options["slices"] = {1:{offset:0.7}};
+options["pieHole"] =    0.3;
 
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartID15c05e6845e5')
+    document.getElementById('PieChartID1fcc78eb7934')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartPieChartID1fcc498731cb() {
+var data = gvisDataPieChartID1fcc498731cb();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Mobile";
+options["legend"] = "none";
+options["pieSliceText"] = "label";
+options["width"] =    600;
+options["height"] =    600;
+options["pieHole"] =    0.3;
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartID1fcc498731cb')
     );
     chart.draw(data,options);
     
@@ -94,9 +152,48 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID15c05e6845e5);
+callbacks.push(drawChartPieChartID1fcc78eb7934);
 })();
-function displayChartPieChartID15c05e6845e5() {
+function displayChartPieChartID1fcc78eb7934() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartID1fcc498731cb);
+})();
+function displayChartPieChartID1fcc498731cb() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -120,22 +217,45 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID15c05e6845e5"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID1fcc78eb7934"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID1fcc498731cb"></script>
  
+<table border="0">
+<tr>
+<td>
+
 <!-- divChart -->
   
-<div id="PieChartID15c05e6845e5" 
-  style="width: 800; height: 700;">
+<div id="PieChartID1fcc78eb7934" 
+  style="width: 600; height: 600;">
 </div>
- <div><span>Data: df &#8226; Chart ID: <a href="Chart_PieChartID15c05e6845e5.html">PieChartID15c05e6845e5</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="PieChartID1fcc498731cb" 
+  style="width: 600; height: 600;">
+</div>
+
+</td>
+</tr>
+</table>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedID1fcc2a0c384a.html">MergedID1fcc2a0c384a</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.5 (2016-04-14) 
-  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart">Documentation and Data Policy</a>
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; Data Policy: See individual charts
 </span></div>
 <p></p>
-<div> 알파벳 코드 순서로 다섯개의 나라를 정해서 
-<p> 인구 파이차트를 만들어 보았다..</p>
+<div> 알파벳 순서로 나온 5개 나라 (Afghanistan,Angola,Albania,United Arab Emirates,Argentina)의
+<p> 인구(Population)와 모바일(Mobile)을 가지고 </p>
+<p> 파이차트를 만들어 보았다.</p>
+<p> 이 5개의 나라중에서 인구는 Argentina가 많았고, 모바일은 United Arab Emirates가 많았다. </p>
 </div>
 </body>
 </html>
